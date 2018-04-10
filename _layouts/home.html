@@ -1,0 +1,21 @@
+---
+layout: default
+---
+
+<h1>
+  .dilakoni<br/>
+  .dinikmati<br/>
+  .disyukuri
+</h1>
+
+<hr/>
+
+<h2>Sliakan dipilih :D</h2>
+
+{%- if site.posts.size > 0 -%}
+<ul>
+  {%- for post in site.posts -%}
+  <li><a href="{{ post.url | relative_url }}">{{ post.title }}</a> @{{ post.date | date: "%d %B %Y"}}</li>
+  {%- endfor -%}
+</ul>
+{%- endif -%}
