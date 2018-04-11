@@ -1,0 +1,101 @@
+/*  Main style untuk web sarimo
+ *  by @sarimo
+ *
+ *  2018-04-11: Menambah style dasar.
+ */
+
+@import url('https://fonts.googleapis.com/css?family=Alice');
+:root {
+  --cl-text-main: #495057;
+  --cl-text-gelap: #343a40;
+  --cl-text-terang: #868e96;
+  --cl-bg-main: #f8f9fa;
+  --cl-border-main: #dee2e6;
+  --cl-link-main: #0ca678;
+  --cl-link-hover: #12b886;
+  --cl-link-gelap: #099268;
+}
+
+body {
+  position: relative;
+  margin: 0;
+  min-height: 100%;
+  color: var(--cl-text-main);
+  background: var(--cl-bg-main);
+  font-family: "Alice", serif;
+}
+
+h1, h2, h3, strong {
+  color: var(--cl-text-gelap);
+}
+
+a {
+  color: var(--cl-link-main);
+  text-decoration-style: dotted;
+}
+
+a:hover {
+  color: var(--cl-link-hover);
+}
+
+blockquote {
+  padding-left: 1em;
+  border-left: 2px solid var(--cl-border-main);
+  color: var(--cl-text-terang);
+  margin-left: 1.3em;
+  margin-bottom: 1.3em;
+}
+
+.daftar-artikel, .banner {
+  max-width: 50em;
+  margin: 0 auto;
+  padding: 1em 1.7em;
+}
+
+.daftar-artikel {
+  padding-top: 3em;
+}
+
+.bg-banner {
+  background: var(--cl-link-main);
+  color: var(--cl-bg-main);
+  padding: 3em 0;
+  border-top: 1px solid var(--cl-link-gelap);
+  border-bottom: 2px solid var(--cl-link-gelap);
+}
+
+.banner h1 {
+  color: var(--cl-bg-main);
+}
+
+.header-web {
+  text-align: center;
+  padding-bottom: 17px;
+}
+
+.judul-web {
+  font-size: 2em;
+  margin-bottom: 0.3em;
+}
+
+.tanggal-post {
+  color: var(--cl-text-terang);
+  font-size: 0.9em;
+  margin-top: -1em;
+  margin-bottom: 2em;
+}
+
+.artikel {
+  max-width: 50em;
+  margin: 0 auto;
+  padding: 1em 1em;
+  border-top: 1px solid var(--cl-border-main);
+}
+
+.ref {
+  border-top: 1px dotted var(--cl-border-main);
+  color: var(--cl-text-terang);
+  font-size: 0.8em;
+  margin-top: 1.5em;
+  padding: 1em 0;
+}

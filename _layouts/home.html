@@ -2,20 +2,28 @@
 layout: default
 ---
 
-<h1>
-  .dilakoni<br/>
-  .dinikmati<br/>
-  .disyukuri
-</h1>
+<main>
 
-<hr/>
+  <div class="bg-banner">
+    <div class="banner">
+      <h1>
+        .dilakoni<br/>
+        .dinikmati<br/>
+        .disyukuri<br/>
+        <small>^^</small>
+      </h1>
+      <p>-- Semacam catatan alam maya dari alam nyata :D</p>
+    </div>
+  </div>
 
-<h2>Sliakan dipilih :D</h2>
+  <div class="daftar-artikel">
+    <h2>Sliakan dipilih :D</h2> {%- if site.posts.size > 0 -%}
+    <ul>
+      {%- for post in site.posts -%}
+      <li><a href="{{ post.url | relative_url }}">{{ post.title }}</a> <span class="tanggal-post">@{{ post.date | date: "%d %B %Y"}}</span></li>
+      {%- endfor -%}
+    </ul>
+    {%- endif -%}
+  </div>
 
-{%- if site.posts.size > 0 -%}
-<ul>
-  {%- for post in site.posts -%}
-  <li><a href="{{ post.url | relative_url }}">{{ post.title }}</a> @{{ post.date | date: "%d %B %Y"}}</li>
-  {%- endfor -%}
-</ul>
-{%- endif -%}
+</main>

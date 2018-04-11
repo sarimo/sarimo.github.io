@@ -2,12 +2,17 @@
 layout: default
 ---
 
-<article>
-  <header>
-    <h2>{{ page.title }}</h2>
-  </header>
+{%- include header.html -%}
 
-  <div>
-    {{ content }}
-  </div>
-</article>
+<main>
+  <article class="artikel">
+    <header>
+      <h2>{{ page.title }}</h2>
+      <p class="tanggal-post">@{{ page.date | date: "%-d %B %Y"}}</p>
+    </header>
+
+    <div>
+      {{ content }}
+    </div>
+  </article>
+</main>
