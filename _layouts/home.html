@@ -3,21 +3,13 @@ layout: default
 ---
 
 <main>
-
-  <div class="bg-banner">
-    <div class="banner">
-      <h1>
-        .dilakoni<br/>
-        .dinikmati<br/>
-        .disyukuri<br/>
-        <small>^^</small>
-      </h1>
-      <p>-- Semacam catatan alam maya dari alam nyata :D</p>
-    </div>
+  <div class="opening">
+    <h1>Hi..</h1>
+    <p>Ini semacam catatan alam maya dari alam nyata :D</p>
   </div>
 
   <div class="daftar-artikel">
-    <h2>Sliakan dipilih :D</h2> {%- if site.posts.size > 0 -%}
+    <h2>Silakan dipilih :D</h2> {%- if site.posts.size > 0 -%}
     <ul>
       {%- for post in site.posts -%}
       <li><a href="{{ post.url | relative_url }}">{{ post.title }}</a> <span class="tanggal-post">@{{ post.date | date: "%d %B %Y"}}</span></li>
@@ -25,5 +17,4 @@ layout: default
     </ul>
     {%- endif -%}
   </div>
-
 </main>

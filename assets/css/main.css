@@ -1,35 +1,39 @@
 /*  Main style untuk web sarimo
  *  by @sarimo
- *
- *  2018-04-11: Menambah style dasar.
  */
 
-@import url('https://fonts.googleapis.com/css?family=Lato|Dosis');
+@import url('https://fonts.googleapis.com/css?family=Lato|Dosis|Open+Sans');
 :root {
-  --cl-text-main: #495057;
-  --cl-text-gelap: #343a40;
-  --cl-text-terang: #868e96;
-  --cl-bg-main: #f8f9fa;
-  --cl-border-main: #dee2e6;
-  --cl-border-terang: #e9ecef;
+  /* Color based on https://yeun.github.io/open-color/ */
+  --cl-gray0: #F8F9FA;
+  --cl-gray2: #E9ECEF;
+  --cl-gray3: #DEE2E6;
+  --cl-gray6: #868E96;
+  --cl-gray7: #495057;
+  --cl-gray8: #343A40;
+  --cl-gray9: #212529;
+
+  --cl-text-terang: var(--cl-gray6);
+  --cl-border-main: var(--cl-gray3);
   --cl-link-main: #0ca678;
   --cl-link-hover: #12b886;
   --cl-link-gelap: #099268;
 }
 
+/* DIRECT */
+
 body {
   position: relative;
   margin: 0;
   min-height: 100%;
-  color: var(--cl-text-main);
-  /* background: var(--cl-bg-main); */
-  font-family: "besley", serif;
+  color: var(--cl-gray7);
+  font-family: "Open Sans", sans-serif;
   line-height: 1.7;
   font-size: 0.9em;
 }
 
 h1, h2, h3 {
-  color: var(--cl-text-gelap);
+  color: var(--cl-gray8);
   font-family: "Dosis", sans-serif;
 }
 
@@ -50,49 +54,92 @@ blockquote {
   margin-bottom: 1.3em;
 }
 
-.daftar-artikel, .banner {
+ol, ul {
+  padding-left: 1.3em;
+}
+
+/* HEADER */
+
+.header-default {
+  background-color: var(--cl-gray8);
+  height: 40px;
+}
+
+.header-default-content {
+  color: var(--cl-gray0);
+  font-family: "Dosis", sans-serif;
+  max-width: 50em;
+  margin: 0 auto;
+  padding: 5px 1.7em;
+}
+
+.header-default-content img{
+  vertical-align: middle;
+}
+
+.header-default-content ul{
+  vertical-align: middle;
+  list-style-type: none;
+  display: inline;
+  padding-left: 0;
+}
+
+.header-default-content ul > li{
+  display: inline-block;
+  margin-left: 17px;
+}
+
+.header-default-content a {
+  color: var(--cl-gray0);
+  text-decoration: none;
+}
+
+.header-default-content a:hover {
+  color: var(--cl-gray6);
+}
+
+
+/* OPENING */
+
+.opening {
+  border-bottom: 1px solid var(--cl-border-main);
+  padding-bottom: 40px;
+}
+
+.opening h1 {
+  font-size: 10em;
+  margin: 0 0 -70px 0;
+}
+
+.opening p {
+  padding-left: 8px;
+  font-size: var(--cl-gray6);
+}
+
+.opening, .daftar-artikel, .artikel {
   max-width: 50em;
   margin: 0 auto;
   padding: 1em 1.7em;
 }
 
+
+/* DAFTAR ARTIKEL */
+
 .daftar-artikel {
   padding-top: 3em;
 }
 
-.bg-banner {
-  background: var(--cl-link-main);
-  color: var(--cl-bg-main);
-  padding: 3em 0;
-  border-top: 1px solid var(--cl-link-gelap);
-  border-bottom: 2px solid var(--cl-link-gelap);
-}
-
-.banner h1 {
-  color: var(--cl-bg-main);
-}
-
-.header-web {
-  text-align: center;
-  padding-bottom: 17px;
-}
-
-.judul-web {
-  font-size: 2em;
-  margin-bottom: 0.3em;
-}
-
 .tanggal-post {
   color: var(--cl-text-terang);
-  font-size: 0.9em;
-  margin-top: -1em;
-  margin-bottom: 2em;
+  margin: -1.7em 0 2em 0;
+  font-size: 0.8em;
+  font-family: "Lato", sans-serif;
 }
 
+
+/* ARTIKEL */
+
 .artikel {
-  max-width: 45em;
-  margin: 0 auto;
-  padding: 1em 1em;
   border-top: 1px solid var(--cl-border-main);
 }
 
@@ -104,28 +151,29 @@ blockquote {
   padding: 1em 0;
 }
 
+
+/* GAMBAR */
+
 .img-responsive {
-  width: 90%;
+  width: 100%;
 }
 
 .gambar {
   text-align: center;
   color: var(--cl-text-terang);
   font-size: 0.8em;
-  margin-bottom: 2.7em;
+  margin: 0 2em 2.7em 0;
   font-family: "Lato", sans-serif;
 }
 
 .gambar img {
   padding: 1em;
   padding-bottom: 3em;
-  border: 1px solid var(--cl-border-terang);
+  border: 1px solid var(--cl-gray2);
   border-radius: 0.3em;
 }
 
 .gambar p {
-  width: 90%;
-  margin: 0 auto;
   margin-top: -6.8em;
   margin-bottom: 1em;
   padding-right: 5px;
