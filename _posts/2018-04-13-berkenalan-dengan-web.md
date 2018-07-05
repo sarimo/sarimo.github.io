@@ -8,7 +8,9 @@ Hi, apa yang dapat kita lakukan dengan web? Banyak sekali bukan? Mulai dari menc
 
 Berbagai pengalaman *online* tersebut tentu tidak *ujug-ujug* datang tak diundang, ada kekuatan yang mendukung di balik itu. Ada *World Wide Web Consortium* (W3C) yang mengelola standar web agar lebih terarah. Aktivitas utamanya yaitu mengembangkan aturan dan pedoman untuk memastikan pertumbuhan jangka panjang web itu sendiri. Sudah terasa kan hasilnya di zaman *now* ini?
 
-Padahal awalnya sang penemu web, Tim Berners-Lee, "hanya" ingin suatu dokumen dapat saling terhubung dengan dokumen lainnya, sehingga dapat memudahkan dalam membagikan *paper* penelitian. Intinya ada sebuah sistem dari dokumen *'hypertext'* yang saling terhubung melalui internet. Untuk mewujudkan mimpi (yang kini jadi kenyataan) itu, ada 3 teknologi yang beliau gunakan:
+Awalnya sang penemu web, Sir Tim Berners-Lee memiliki visi untuk memungkinkan pengembangan jaringan tingkat tinggi dari sebuah konten secara universal yang mengizinkan suatu dokumen dapat terhubung dengan dokumen lainnya.
+
+Ada 3 teknologi yang beliau gunakan:
 
 - *HyperText Transfer Protocol* (HTTP) sebagai pondasi komunikasi data pada web.
 - *HyperText Markup Language* (HTML) merupakan bahasa *mark-up* utama untuk membuat halaman web dan informasi yang ditampilkan pada web browser.
@@ -29,4 +31,6 @@ Bagian kedua yakni CSS, merupakan semua yang berhubungan dengan **tampilan** ata
 JavaScript (atau disingkat JS) merupakan bagian tentang **aksi** pada suatu halaman, seperti berinteraksi dengan pengguna atau mengubah halaman sesuai masukan aksi tersebut. Dengan JS ini kita dapat membuat web bukan hanya sebuah dokumen, melainkan dapat lebih berpotensi menjadi sebuah aplikasi web.
 
 
-Itu dia perkenalan singkat dengan web. Selanjutnya kita akan mencoba membuat dasar sebuah halaman web. Siap?
+Kalau boleh diibaratkan seperti manusia, HTML itu rangkanya, CSS itu pakaiannya, dan JS itu aksinya.
+
+Selanjutnya kita akan mencoba membuat dasar sebuah halaman web. Siap?
