@@ -18,8 +18,7 @@ Ada 3 teknologi yang beliau gunakan:
 
 Nah, fokus kita saat ini pada teknologi yang ke-2 yaitu bagaimana **membuat halaman web** melalui *"the big 3"*: HTML5, CSS, dan JavaScript yang akan kita gunakan untuk menampilkan dan berinteraksi dengan halaman web. Mari kita bahas satu persatu.
 
-{% include image.html urlGambar="https://c1.staticflickr.com/1/788/41387744392_9359acd8f9_b.jpg" alt="The Big 3" caption="The Big 3: HTML, CSS, &amp; JS." sumber="Flickr" urlSumber="https://flic.kr/p/264i1tS" %}
-
+{% include image.html urlGambar="https://s20.postimg.cc/8miaiv5kd/the_big_3-by_leksarimo.png" alt="The Big 3: HTML5, CSS, dan JavaScript" caption="The Big 3: HTML5, CSS, dan JavaScript" %}
 
 **Apa itu HTML5?**   
 Dilihat dari namanya sudah bisa ditebak bahwa HTML5 merupakan versi ke-5 dari HTML. Bahasa pertama ini berisi semua konten yang disusun dalam sebuah **struktur** logika. Konten itu dapat berupa kata-kata, judul, gambar, diagaram, serta masih banyak lagi.
